@@ -1,14 +1,17 @@
-# from flask import Flask
+from flask import Flask
 
-from flask import Flask, jsonify, request, render_template
 app = Flask(__name__)
 
-@app.route('/')
-def home_page():
-    example_embed='This string is from python'
-    return render_template('../public/index.html', embed=example_embed)
+@app.route('/api', methods=['GET'])
+def api():
+    return {
+        'userId': 1,
+        'title': 'Flask React Application Python behbeh asdf asdf ',
+        'completed': False
+    }
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=true)
 
 # from flask import Flask, render_template, request
 # import pandas as pd
@@ -30,7 +33,7 @@ app.run(debug=True)
 # if _name_ == '_main_':
 #     app.run(debug=true)
 
-# # import the data and fill the NAN with zero
+# import the data and fill the NAN with zero
 # data = pd.read_excel("pokemon dp list 1.xlsx")
 # type_chart = pd.read_excel("pokemon type chart.xlsx")
 # data = data.fillna(0)

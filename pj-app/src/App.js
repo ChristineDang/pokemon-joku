@@ -1,7 +1,8 @@
+
 import './App.css';
 import background from './images/lightbkgrnd.png';
 import { Carousel, Card, Button, ListGroup } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
+// import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import pjMain from './images/PJC1.png';
 import filler from './images/imgfill.jpg';
@@ -10,9 +11,7 @@ import turtwig from './images/turtwig.png';
 import piplup from './images/piplup4.png';
 import chimchar from './images/chimchar4.png';
 
-
-
-
+import React, {useState, useEffect} from 'react';
 
 
 const backgroundImg = {
@@ -25,12 +24,33 @@ const backgroundImg = {
   backgroundSize: 'cover',
 };
 
+
+
 //create onclick function
 
 function App() {
+  const [initialData, setInitialData] = useState([{}])
+
+  useEffect(() => {
+    fetch('/api').then(
+      response => response.json()
+    ).then(data => setInitialData(data))
+  }, []);
+
+  // useEffect(() => {
+  //   fetch('/').then(response => {
+  //     if(response.ok){
+  //       return response.json()
+  //     }
+  //   }).then((data) => console.log(data))
+  // },[])
+
+
   return (
 
       <div className="App">
+        <h1>{initialData.title}</h1>
+
           <Carousel fade controls={false}>
             <Carousel.Item>
 
@@ -100,7 +120,7 @@ function App() {
                               
 
                             </Card.Text>
-                            <Button variant="primary">Match Up!</Button>
+                            <Button variant="primary" onClick={console.log('this button was pushed')}>Match Up!</Button>
                           </Card.Body>
                       </Card>
                       </Carousel.Item>
@@ -148,6 +168,7 @@ function App() {
 
           <div className='TeamSuggestion'>
             <h1 className="Title">TEAM SUGGESTION</h1>
+            
           </div>
 
 
