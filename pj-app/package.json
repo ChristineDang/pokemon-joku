@@ -1,5 +1,5 @@
 {
-  "name": "pj-app",
+  "name": "pokemon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,9 +8,9 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.0",
     "react": "^17.0.2",
-    "react-animated-slider": "^2.0.0",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-owl-carousel": "^2.3.3",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
@@ -18,7 +18,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test-api": "cd api && flask test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,6 +26,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -38,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:5000"
+  }
 }

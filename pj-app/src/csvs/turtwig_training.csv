@@ -1,0 +1,43 @@
+Types,Sdex,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Attacker,Special Attacker,Defense Tank,Special Defense Tank,All Rounder,Complete Tank,Complete Attacker,Support,Legendary,Ability 1,Ability 2,Evolution Stage,Chosen Team
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,24,Gyarados,Water,Flying,540,95,125,79,60,100,81,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Flying,37,Rampardos,Rock,None,495,97,165,60,65,50,58,Yes,Yes,Yes,No,No,No,Yes,No,No,,,2,2
+Bug,91,Rapidash,Fire,None,500,65,100,70,80,80,105,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Ice,130,Toxicroak,Poison,Fighting,490,83,106,65,86,65,85,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Dry Skin,,2,2
+Poison,39,Bastiodon,Rock,Steel,495,60,52,168,47,138,30,No,No,Yes,Yes,No,Yes,No,Yes,No,,,2,2
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,44,Golduck,Water,None,500,80,82,78,95,80,85,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Flying,19,Luxray,Electric,None,523,80,120,79,95,79,70,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,3,2
+Bug,30,Crobat,Poison,Flying,535,85,90,80,70,80,130,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,3,2
+Ice,116,Lucario,Fighting,Steel,525,70,110,70,115,70,90,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Poison,123,Hippowdon,Ground,None,525,108,112,118,68,72,47,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Sand Stream,,2,2
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,14,Bibarel,Normal,Water,410,79,85,60,55,60,71,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Flying,33,Golem,Rock,Ground,495,80,120,130,55,65,45,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,3,2
+Bug,47,Mothim,Bug,Flying,424,70,94,50,94,50,66,Yes,Yes,No,No,No,No,Yes,Yes,No,,,3,2
+Ice,42,Machamp,Fighting,None,505,90,130,80,65,85,55,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,3,2
+Poison,61,Gastrodon,Water,Ground,475,111,83,68,92,82,39,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,2
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,57,Floatzel,Water,None,495,85,105,55,85,50,115,Yes,Yes,No,No,No,No,Yes,Yes,No,,,2,2
+Flying,93,Sudowoodo,Rock,None,410,70,100,115,30,65,30,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,2,2
+Bug,107,1ctowl,Normal,Flying,452,100,50,50,86,96,70,No,Yes,No,Yes,No,No,No,Yes,No,,,2,2
+Ice,89,Bronzong,Steel,Psychic,500,67,89,116,79,116,33,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Levitate,Heat Proof,2,2
+Poison,83,Chimecho,Psychic,None,455,75,50,80,95,90,65,No,Yes,Yes,Yes,No,Yes,No,Yes,No,,,2,2
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,59,Cherrim,Grass,None,450,70,60,70,87,78,85,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,1
+Flying,52,Dustox,Bug,Poison,385,60,50,70,50,90,65,No,No,Yes,Yes,No,Yes,No,Yes,No,,,3,1
+Bug,121,Girafarig,Normal,Psychic,455,70,80,65,90,65,85,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,,,2,1
+Ice,111,Garchomp,Dragon,Ground,600,108,130,95,80,85,102,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Sand Veil,,3,1
+Poison,131,Carnivine,Grass,None,454,74,100,72,90,72,46,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Levitate,,2,1
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,23,Magikarp,Water,None,200,20,10,55,15,20,80,No,No,No,No,No,No,No,Yes,No,,,1,1
+Flying,36,Cranidos,Rock,None,350,67,125,40,30,30,58,Yes,No,No,No,No,No,Yes,No,No,,,1,1
+Bug,90,Ponyta,Fire,None,410,50,85,55,65,65,90,Yes,Yes,No,Yes,No,No,Yes,Yes,No,,,1,1
+Ice,129,Croagunk,Poison,Fighting,300,48,61,40,61,40,50,Yes,Yes,No,No,No,No,Yes,No,No,Dry Skin,,1,1
+Poison,38,Shieldon,Rock,Steel,350,30,42,118,42,88,30,No,No,Yes,Yes,No,Yes,No,Yes,No,,,1,1
+Main,1,Turtwig,Grass,None,318,55,68,64,45,55,31,Yes,No,Yes,Yes,No,Yes,No,Yes,No,,,1,2
+Fire,43,Psyduck,Water,None,320,50,52,48,65,50,55,No,Yes,No,No,No,No,Yes,No,No,,,1,1
+Flying,17,Shinx,Electric,None,263,45,65,34,40,34,45,Yes,No,No,No,No,No,Yes,No,No,,,1,1
+Bug,28,Zubat,Poison,Flying,245,40,45,35,30,40,55,No,No,No,No,No,No,Yes,No,No,,,1,1
+Ice,115,Riolu,Fighting,None,285,40,70,40,35,40,60,Yes,No,No,No,No,No,No,Yes,No,,,1,1
+Poison,122,Hippopotas,Ground,None,330,68,72,78,38,42,32,Yes,No,Yes,No,No,No,Yes,No,No,Sand Stream,,1,1

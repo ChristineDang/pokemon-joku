@@ -1,0 +1,62 @@
+{
+  "1": {
+    "pokemon_data": {
+      "Types": "Fire",
+      "Sdex": 24,
+      "Name": "Gyarados",
+      "Type 1": "Water",
+      "Type 2": "Flying",
+      "HP": "540"
+    }
+  },
+  "2": {
+    "pokemon_data": {
+      "Types": "Fire",
+      "Sdex": 44,
+      "Name": "Golduck",
+      "Type 1": "Water",
+      "Type 2": "None",
+      "HP": "500"
+    }
+  },
+  "3": {
+    "pokemon_data": {
+      "Types": "Poison",
+      "Sdex": 61,
+      "Name": "Gastrodon",
+      "Type 1": "Water",
+      "Type 2": "Ground",
+      "HP": "475"
+    }
+  },
+  "4": {
+    "pokemon_data": {
+      "Types": "Fire",
+      "Sdex": 57,
+      "Name": "Floatzel",
+      "Type 1": "Water",
+      "Type 2": "None",
+      "HP": "495"
+    }
+  },
+  "5": {
+    "pokemon_data": {
+      "Types": "Fire",
+      "Sdex": 23,
+      "Name": "Magikarp",
+      "Type 1": "Water",
+      "Type 2": "None",
+      "HP": "200"
+    }
+  },
+  "6": {
+    "pokemon_data": {
+      "Types": "Fire",
+      "Sdex": 43,
+      "Name": "Psyduck",
+      "Type 1": "Water",
+      "Type 2": "None",
+      "HP": "320"
+    }
+  }
+}

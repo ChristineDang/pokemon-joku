@@ -1,132 +1,73 @@
-from flask import Flask
+from flask import Flask, jsonify
+import pandas as pd
+import json
+from flask import request
+import os
+import os.path
+from os import path
+# from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
+# app.config["SQLALCHEMY_DATABSE_URI"] = "sqlite:///example.db"
+# data = pd.read_csv('../src/csvs/poke.csv')
+# db = SQLAlchemy(app)
 
-@app.route('/api', methods=['GET'])
-def api():
-    return {
-        'userId': 1,
-        'title': 'Flask React Application Python behbeh asdf asdf ',
-        'completed': False
-    }
+# class Todo(db.Model):
+#     id = db.Column(db.Integer, primary_key=True)
+#     content = db.Column(db.Text, nullable=False)
 
+
+#     def __str__(self):
+#         return f'{self.id} {self.content}'
+
+# def todo_serializer(todo):
+#     return {
+#         'id': todo_id,
+#         'content': todo_content
+#     }
+# # print(data)
+
+@app.route("/team", methods=['POST'])
+def team():
+    # id sent over is "poke name"
+    # JSON BODY: "turtwig", ""
+    main_poke = request.json 
+   
+    if main_poke:
+        from grab import team_builder
+        team_builder(main_poke)
+        return 'Created Team', 201
+    return "No Starting Pokemon was Chosen"
+
+@app.route("/pokemon", methods=['GET'])
+def pokemon():
+
+    with open('./team.json', 'r') as jsonfile:
+        file_data = json.loads(jsonfile.read())
+    return json.dumps(file_data)
+    # {
+    #     "pokemon": 
+    # [
+    #     {
+    #         "pokemon_id" : "000",
+    #         "pokemon_data" : {
+    #             "name" : "Elise",
+    #             "age" : 26,
+    #             "birthday" : "03/10/1995"
+    #         }
+    #     },{
+    #         "person_id" : "001",
+    #         "person_data" : {
+    #             "name" : "Christine",
+    #             "age" : 26,
+    #             "birthday" : "04/14/1995"
+    #         }
+    #     }
+    # ]}
+    # return jsonify([*map(todo_serializer, Todo.query.all())])
+    # pokemon.pokemon_data.name 
 if __name__ == '__main__':
-    app.run(debug=true)
-
-# from flask import Flask, render_template, request
-# import pandas as pd
-
-# app = flask(_name_)
-
-# @app.route('/'. methods=['GET', 'POST'])
-# def index():
-#     return render_template('index.html')
-
-# @app.route('/data', methods=['GET', 'POST'])
-#     def data():
-#         if request.method == 'POST':
-#             file = request.form['upload-file']
-#             data = pd.read_excel(file)
-#             return render_template('data.html', data=data)
+    app.run(debug=True)
 
 
-# if _name_ == '_main_':
-#     app.run(debug=true)
-
-# import the data and fill the NAN with zero
-# data = pd.read_excel("pokemon dp list 1.xlsx")
-# type_chart = pd.read_excel("pokemon type chart.xlsx")
-# data = data.fillna(0)
-
-# global team_list
-# team_list = []
-
-# global weakness_list
-# weakness_list =[]
-
-# global strength_list
-# strength_list = []
-
-# pokemon_chooser()
-
-# if chosen_poke == ["turtwig"]:
-    
-#     team_examples = pd.read_excel("pokemon turtwig training data draft.xlsx")
-    
-
-#     def team_builder(x):
-        
-#         x = x[0]
-#         team_list.append(x)
-#         grab_chosen_poke_name = data[data["Name"].str.lower() == team_list[0]]
-#         grab_chosen_poke_type = grab_chosen_poke_name["Type 1"][0].lower()
-#         type_chart_grab_1 = type_chart[type_chart["Attacking Type"] == grab_chosen_poke_type].drop(columns="Attacking Type")
-#         type_column_names = type_chart_grab_1.columns.to_list()
-
-#         for i in type_column_names:
-#             if type_chart_grab_1[i].values == 0.5:
-#                 weakness_list.append(i)
-
-#         if len(weakness_list) > 5:
-#             diff = len(weakness_list) - 5
-#             for i in range(diff):
-#                 weakness_list.pop(random.randrange(len(weakness_list)))
-#         else: pass
-
-#         print(weakness_list)
-
-#         type_grab_2 = type_chart[type_chart["Attacking Type"] == weakness_list[0]]
-#         for i in type_column_names:
-#             if type_grab_2[i].values == 0.5:
-#                 strength_list.append(i)
-
-#         random_type = random.choice(strength_list)
-#         poke_from_strength = data[data["Type 1"].str.lower() == random_type]
-#         chosen_type_poke = random.choice(poke_from_strength["Name"].to_list())
-#         team_list.append(chosen_type_poke)
-
-
-#         type_grab_2 = type_chart[type_chart["Attacking Type"] == weakness_list[1]]
-#         for i in type_column_names:
-#             if type_grab_2[i].values == 0.5:
-#                 strength_list.append(i)
-
-#         random_type = random.choice(strength_list)
-#         poke_from_strength = data[data["Type 1"].str.lower() == random_type]
-#         chosen_type_poke = random.choice(poke_from_strength["Name"].to_list())
-#         team_list.append(chosen_type_poke)
-
-#         type_grab_2 = type_chart[type_chart["Attacking Type"] == weakness_list[2]]
-#         for i in type_column_names:
-#             if type_grab_2[i].values == 0.5:
-#                 strength_list.append(i)
-
-#         random_type = random.choice(strength_list)
-#         poke_from_strength = data[data["Type 1"].str.lower() == random_type]
-#         chosen_type_poke = random.choice(poke_from_strength["Name"].to_list())
-#         team_list.append(chosen_type_poke)
-
-#         type_grab_2 = type_chart[type_chart["Attacking Type"] == weakness_list[3]]
-#         for i in type_column_names:
-#             if type_grab_2[i].values == 0.5:
-#                 strength_list.append(i)
-
-#         random_type = random.choice(strength_list)
-#         poke_from_strength = data[data["Type 1"].str.lower() == random_type]
-#         chosen_type_poke = random.choice(poke_from_strength["Name"].to_list())
-#         team_list.append(chosen_type_poke)
-
-#         type_grab_2 = type_chart[type_chart["Attacking Type"] == weakness_list[4]]
-#         for i in type_column_names:
-#             if type_grab_2[i].values == 0.5:
-#                 strength_list.append(i)
-
-#         random_type = random.choice(strength_list)
-#         poke_from_strength = data[data["Type 1"].str.lower() == random_type]
-#         chosen_type_poke = random.choice(poke_from_strength["Name"].to_list())
-#         team_list.append(chosen_type_poke)
-
-#         print(team_list)
-
-# elif chosen_poke == ["chimchar"]:
-#    team_examples = pd.read_excel("chimchar training data draft.xlsx")
